@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.column {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column h2, .column img, .column p {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .column {
+        width: 30%;
+    }
+}
+
+body {
+    background-image: url("IMG_20171104_083334.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
