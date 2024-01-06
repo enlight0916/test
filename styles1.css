@@ -12,10 +12,10 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    height: auto; /* 设置列的高度为自動調整 */
+    height: 200px;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
 }
 
@@ -32,8 +32,16 @@ img {
 
 @media (max-width: 768px) {
     .column {
-        width: 100%;
+        flex-direction: column; /* 在螢幕縮小時將列變成上下排列 */
+        height: auto; /* 調整列的高度為自動調整 */
     }
+}
+
+@media (min-width: 769px) {
+    .column {
+       flex-direction: row;
+       height: 200px;
+     }
 }
 
 body {
